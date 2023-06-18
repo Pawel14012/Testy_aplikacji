@@ -7,16 +7,16 @@
 ### Struktura aplikacji
 Aplikacja wykorzystuje wzorzec architektoniczny Model-Widok-Kontroler (MVC), który podziela kod na trzy główne komponenty:
 1. Model:
-•	„ListaZakupow”: Reprezentuje model listy zakupów. Zarządza stanem listy zakupów, udostępnia metody do modyfikacji listy oraz tworzenia memento do przechowywania i przywracania stanu.
+*	(`ListaZakupow`): Reprezentuje model listy zakupów. Zarządza stanem listy zakupów, udostępnia metody do modyfikacji listy oraz tworzenia memento do przechowywania i przywracania stanu.
 2. Widok:
-•	Interfejs użytkownika (CLI): Główna część kodu obsługuje interakcje użytkownika za pomocą interfejsu wiersza poleceń (CLI). Wyświetla opcje menu i prosi użytkownika o wprowadzenie danych. Pokazuje również listę zakupów oraz historię zmian na żądanie.
+*	Interfejs użytkownika (CLI): Główna część kodu obsługuje interakcje użytkownika za pomocą interfejsu wiersza poleceń (CLI). Wyświetla opcje menu i prosi użytkownika o wprowadzenie danych. Pokazuje również listę zakupów oraz historię zmian na żądanie.
 3. Kontroler:
-•	„HistoriaListyZakupow”: Pełni rolę kontrolera w wzorcu MVC. Zarządza historią listy zakupów, zapisuje stany, cofa zmiany oraz wyświetla historię.
-•	Kontroler współdziała zarówno z modelem (`ListaZakupow`), jak i z widokiem (CLI), aby koordynować działania i dostarczać odpowiednią funkcjonalność.
+*	(`HistoriaListyZakupow`): Pełni rolę kontrolera w wzorcu MVC. Zarządza historią listy zakupów, zapisuje stany, cofa zmiany oraz wyświetla historię.
+*	Kontroler współdziała zarówno z modelem (`ListaZakupow`), jak i z widokiem (CLI), aby koordynować działania i dostarczać odpowiednią funkcjonalność.
 ### Podział struktury:
 - Klasa „ListaZakupow” reprezentuje model. Zawiera listę zakupów i udostępnia metody do dodawania i usuwania produktów, wyświetlania listy, tworzenia memento oraz przywracania stanu z memento.
-- Klasa „ListaZakupowMemento” reprezentuje obiekt memento. Przechwytuje stan listy zakupów w określonym punkcie czasowym. Zawiera listę produktów oraz datę utworzenia memento.
-- Klasa „HistoriaListyZakupow” pełni rolę kontrolera. Zarządza historią listy zakupów i współdziała zarówno z modelem, jak i z widokiem. Udostępnia metody do zapisywania stanu, cofania zmian oraz wyświetlania historii.
+- Klasa 'ListaZakupowMemento' reprezentuje obiekt memento. Przechwytuje stan listy zakupów w określonym punkcie czasowym. Zawiera listę produktów oraz datę utworzenia memento.
+- Klasa 'HistoriaListyZakupow' pełni rolę kontrolera. Zarządza historią listy zakupów i współdziała zarówno z modelem, jak i z widokiem. Udostępnia metody do zapisywania stanu, cofania zmian oraz wyświetlania historii.
 - Menu użytkownika: pobiera dane wejściowe i wywołuje odpowiednie metody kontrolera i modelu na podstawie wybranej opcji. Wyświetla również listę zakupów oraz historię na żądanie.
 
 
@@ -54,6 +54,7 @@ B.Integracyjne:
 *	Z menu wybieramy usuwanie produktu
 *	Wpisujemy nazwe produktu który chcemy usunąć
 *	Z menu wybieramy wyświetlanie listy
+  
 C.Akceptacyjne:
 1.	Dodawanie produktu, usuwanie go , cofnięcie zmian i wyjście z programu
 *	Wybieramy dodawanie produktu z listy 
