@@ -42,27 +42,20 @@ B.Integracyjne:
 1.	Dodawanie produktu i wyswietlanie listy:
 *	Z menu wybieramy dodawanie produktu
 *	Wpisujemy nazwe produktu
-*	Wyswietlamy liste zakupów
-*	Sprawdzamy czy wyświetla się odpowiedni produkt
-2.	Dodawanie produktu i sprawdzanie historii zmian:
-*	Z menu wybieramy dodawanie produktu
-*	Wpisujemy nazwe produktu
-*	Wyświetlamy historię zmian
-3.	Dodawanie produktu, usuwanie produktu i wyświetlanie listy
-*	Z menu wybieramy dodawanie produktu
-*	Wpisujemy nazwe produktu
-*	Z menu wybieramy usuwanie produktu
-*	Wpisujemy nazwe produktu który chcemy usunąć
-*	Z menu wybieramy wyświetlanie listy
-  
+*	Ponownie dodajemy produkt
+*	Usuwamy produkt
+*	Cofamy zmiany
+
 C.Akceptacyjne:
 1.	Dodawanie produktu, usuwanie go , cofnięcie zmian i wyjście z programu
 *	Wybieramy dodawanie produktu z listy 
 *	Wpisujemy nazwe produktu
+*	Dodajemy kolejny produkt
 *	Wybieramy usuwanie produktu 
-*	Wpisujegmy nazwe produktu do usuniecia
+*	Wpisujemy nazwe produktu do usuniecia
 *	Cofamy zmiany w menu
-*	Wychodzimy z programu
+*	Dodajemy kolejne 2 produkty
+*	Sprawdzamy czy wyświetlana jest odpowiednia historia zakupów
 
 ### Wykorzystane narzędzia i biblioteki:
 1.	Język programowania Python:Za jego pomocą została napisana ta aplikacja
